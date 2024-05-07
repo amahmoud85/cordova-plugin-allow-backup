@@ -22,7 +22,8 @@
   </edit-config>
 
   <config-file target="app/src/main/AndroidManifest.xml" parent="/*">
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="remove" />
+          <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="remove" />
+	  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" tools:node="remove" />
   </config-file>
 	  
   </platform>
