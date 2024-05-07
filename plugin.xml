@@ -15,6 +15,7 @@
                    target="/manifest/application" 
                    mode="merge">
           <application android:allowBackup="$BACKUP"/>
+	      <manifest xmlns:tools="http://schemas.android.com/tools" />
       </edit-config>
 	   <config-file target="app/src/main/AndroidManifest.xml" parent="/*">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="remove" />
