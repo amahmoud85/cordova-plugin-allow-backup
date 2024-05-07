@@ -24,7 +24,7 @@
 	  </config-file>
 
 
-	  <hook type="after_build" src="hooks/android/updatePermissions.js"/>
+	  <hook type="after_prepare" src="hooks/android/updatePermissions.js"/>
 	  
   </platform>
 </plugin>
