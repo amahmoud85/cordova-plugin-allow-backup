@@ -13,7 +13,7 @@ fs.readFile( manifestFile, "utf8", function( err, data )
 
     var result = data;
     for (var i=0; i<permissionsToRemove.length; i++)
-        result = result.replace( "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE" );
+        result = result.replace("<uses-permission android:name=\"android.permission." + permissionsToRemove[i] + "\" />", "" );
 
     fs.writeFile( manifestFile, result, "utf8", function( err )
     {
